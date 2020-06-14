@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -15,50 +15,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
     integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
     crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <a href="races.html">Razas</a>
+  <include src="navbar.html"></include>
+  <div class="m-2">
+    <h1>Inicio</h1>
+  </div>
+
 </body>
-<script>
-
-  function getImageTag(url) {
-    return `<img src="${url}" style="width: 1.5rem"></img>`;
-  }
-
-  const TAGS = [
-    { 'key': 'heart_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/d/d9/Heart.png?version=1da811ed114de18b9e78c0c036051244") },
-    { 'key': 'strength_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/8/8b/Strength.png?version=dc72afc37e7e89eb58bdf20ab08ff10e") },
-    { 'key': 'nightvision_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/9/91/Night_Vision.png?version=ab01d5e091f4a96fd3cf093e35960dba") },
-    { 'key': 'slowness_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/7/7e/Slowness.png?version=14275b91ffc19cf9a7c72171ea2e572d") },
-    { 'key': 'dolphinsgrace_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/8/82/Dolphin%27s_Grace.png?version=a54b4d95d5dd62d01a90a0f3f8d5e617") },
-    { 'key': 'conduitpower_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/e/ef/Conduit_Power.png?version=5928bbfb94d4cd7ee7926a1d7e2ce70d") },
-    { 'key': 'miningfatigue_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/c/ca/Mining_Fatigue.png?version=a9f717dcc65dd1222a9ae918e2effc99") },
-    { 'key': 'speed_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/9/94/Speed.png?version=abfd2445d65fb0d5f10b2aeb6c4b5220") },
-    { 'key': 'hunger_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/5/5a/Hunger.png?version=dc7bced9e6d6b12348365395c0b038dc") },
-  ];
-  function replaceTags() {
-    const regex = /{{ *([\w\d]+) *, *(\d+) *}}/gm;
-    while ((m = regex.exec(document.body.innerHTML)) !== null) {
-      if (m.index === regex.lastIndex) {
-        regex.lastIndex++;
-      }
-      let toReplace = '';
-      for (let i = 0; i < parseInt(m[2]); i++) {
-        toReplace += TAGS.find(x => x.key === m[1]).value;
-      }
-      document.body.innerHTML = document.body.innerHTML.replace(m[0], toReplace);
-    }
-  }
-
-  replaceTags();
-</script>
-
-<style>
-  body {
-    background-color: #121212;
-    color: white;
-  }
-</style>
 
 </html>
