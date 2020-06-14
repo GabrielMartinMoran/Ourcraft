@@ -1,5 +1,5 @@
 function getImageTag(url) {
-  return `<img src="${url}" style="width: 1.5rem"></img>`;
+  return `<img src="${url}" style="height: 1.5rem"></img>`;
 }
 
 const TAGS = [
@@ -12,6 +12,54 @@ const TAGS = [
   { 'key': 'miningfatigue_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/c/ca/Mining_Fatigue.png?version=a9f717dcc65dd1222a9ae918e2effc99") },
   { 'key': 'speed_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/9/94/Speed.png?version=abfd2445d65fb0d5f10b2aeb6c4b5220") },
   { 'key': 'hunger_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/5/5a/Hunger.png?version=dc7bced9e6d6b12348365395c0b038dc") },
+  { 'key': 'wooden_sword_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/d/d5/Wooden_Sword_JE2_BE2.png?version=d8b7ce08684294038de6be0a831a9180") },
+  { 'key': 'stone_sword_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/b/b1/Stone_Sword_JE2_BE2.png?version=db3a89bf69162a8854f8de3d00009b43") },
+  { 'key': 'iron_sword_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/8/8e/Iron_Sword_JE2_BE2.png?version=8e55e662946d2f44bf9e85b410b17506") },
+  { 'key': 'golden_sword_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/d/db/Golden_Sword_JE3_BE2.png/120px-Golden_Sword_JE3_BE2.png?version=c1a2d896a14838d241d6fd21a9e99e3b") },
+  { 'key': 'diamond_sword_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/6/6a/Diamond_Sword_JE2_BE2.png/120px-Diamond_Sword_JE2_BE2.png?version=fc4edfafd493d460f1fa0b339815cf1c") },
+  { 'key': 'wooden_axe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/5/56/Wooden_Axe_JE2_BE2.png?version=3889bb78b62ea1dc18967a2419799673") },
+  { 'key': 'stone_axe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/0/02/Stone_Axe_JE2_BE2.png?version=ffaf2ed5504f00a042a989217d842fe0") },
+  { 'key': 'iron_axe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/b/b7/Iron_Axe_JE4_BE2.png?version=aa88a14281e7957e380d70c02addfe71") },
+  { 'key': 'golden_axe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/e/e2/Golden_Axe_JE3_BE2.png?version=9b007277659951286cd68ccb070a55ab") },
+  { 'key': 'diamond_axe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/a/ae/Diamond_Axe_JE2_BE2.png?version=a4d8e237ad09abe71d161f9b507074aa") },
+  
+  { 'key': 'stone_hoe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/c/c8/Stone_Hoe_JE2_BE2.png?version=bea75ff4058a7af4d86612de1dc1f16a") },
+  { 'key': 'iron_hoe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/b/ba/Iron_Hoe_JE2_BE2.png?version=bb5fe20803d8cfcc5001a07a96fb57c0") },
+  { 'key': 'golden_hoe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/2/22/Golden_Hoe_JE2_BE2.png?version=afa054c4499c830aca256c4379a493bb") },
+  { 'key': 'diamond_hoe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/6/68/Diamond_Hoe_JE2_BE2.png?version=d311afb09560cd753bb0e5b222e051b6") },
+  { 'key': 'stone_shovel_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/6/6c/Stone_Shovel_JE2_BE2.png?version=1c203234b52c3bd1e47115127b7aa035") },
+  { 'key': 'iron_shovel_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/c/cd/Iron_Shovel_JE2_BE2.png?version=8e47922dc1c564c1b800b62734e6953c") },
+  { 'key': 'golden_shovel_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/c/c9/Golden_Shovel_JE3_BE2.png?version=c3a0bead590efbd96b2bbfc8f9248b7e") },
+  { 'key': 'diamond_shovel_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/6/61/Diamond_Shovel_JE2_BE2.png?version=4c7393b306b1d82ffc60031bb0098767") },
+  { 'key': 'golden_pickaxe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/d/d8/Golden_Pickaxe_JE3_BE2.png/120px-Golden_Pickaxe_JE3_BE2.png?version=b030c25479998ef365f337e4e2efe84f") },
+  { 'key': 'diamond_pickaxe_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/7/7a/Diamond_Pickaxe_JE2_BE2.png?version=a15ca8b25719827ee46fff32b294ccf9") },
+  
+
+  { 'key': 'bow_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/9/99/Bow_JE2_BE1.png/120px-Bow_JE2_BE1.png?version=f59c9dcd0233ad8c30c7de68ac08e578") },
+  { 'key': 'crossbow_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/7/79/Crossbow.png/150px-Crossbow.png?version=929fd418e4c54e34615df8d2dad0b688") },
+  { 'key': 'arrow_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/5/5d/Arrow_%28Item%29.png?version=99dedc3d59580070c1b0573b417eb6ee") },
+  { 'key': 'leather_helmet_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/d/de/Leather_Cap_JE4_BE2.png?version=79252a96f1e3deef301899482af61a35") },
+  { 'key': 'iron_helmet_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/3/37/Iron_Helmet_JE2_BE2.png?version=6c3678013ffe66c2e28933679297ca47") },
+  { 'key': 'golden_helmet_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/7/7a/Golden_Helmet_JE2_BE2.png?version=67a2a195e4b1799f234a848225dabbd1") },
+  { 'key': 'diamond_helmet_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/b/b2/Diamond_Helmet_JE2_BE2.png?version=180f70b1340f7387df4dae39cd595008") },
+  { 'key': 'turtle_helmet_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/5/5e/Turtle_Shell.png?version=51f35fe5d76a2145ddfe45feb83aaed7") },
+  { 'key': 'leather_chesplate_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/b/b7/Leather_Tunic_JE4_BE2.png?version=ade87a138bf98729c4a23e4c3f12e3a7") },
+  { 'key': 'iron_chesplate_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/3/31/Iron_Chestplate_JE2_BE2.png?version=be13f6dab76c99d1fe8a33ffda37aecd") },
+  { 'key': 'golden_chesplate_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/2/2e/Golden_Chestplate_JE2_BE2.png?version=f2b47c52a8209ed72256191ebb9db575") },
+  { 'key': 'diamond_chesplate_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/e/e0/Diamond_Chestplate_JE3_BE2.png?version=b2f00ac24fe36f212ff917b6db4da393") },
+  { 'key': 'leather_leggings_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/0/06/Leather_Pants_JE4_BE2.png?version=6f8f8e1eec313cde66256ee6dc384aa6") },
+  { 'key': 'iron_leggings_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/4/42/Iron_Leggings_JE2_BE2.png?version=e1b8cb904a82c10df76223cfc9e2b27b") },
+  { 'key': 'golden_leggings_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/b/bf/Golden_Leggings_JE2_BE2.png?version=bfc87ac23bf91b8c5b542d3cd9b30fac") },
+  { 'key': 'diamond_leggings_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/f/fc/Diamond_Leggings_JE2_BE2.png?version=efb92bca816b1820024529bb3254157d") },
+  { 'key': 'leather_boots_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/2/25/Leather_Boots_JE3_BE2.png?version=9cd1915c0e3deeb23eb5a7b9a088b1e5") },
+  { 'key': 'iron_boots_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/4/42/Iron_Boots_JE2_BE2.png?version=a9d466157909bd56801dfa0924487f62") },
+  { 'key': 'golden_boots_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/7/7c/Golden_Boots_JE2_BE2.png?version=967fd7a24ef877f10ac87d8c6982ea3c") },
+  { 'key': 'diamond_boots_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/8/82/Diamond_Boots_JE2_BE2.png?version=4beb9780ae572d7fe47235bee0e95023") },
+  { 'key': 'shield_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/c/c6/Shield_JE2_BE1.png/80px-Shield_JE2_BE1.png?version=e61d7b9ca83a7a79114955333a82ae1c") },
+  { 'key': 'boat_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/2/26/Acacia_Boat_%28Item%29.png/120px-Acacia_Boat_%28Item%29.png?version=66b7919a546a0c23221de669d12e83a7") },
+  { 'key': 'anvil_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/3/38/Anvil_JE2_BE2.png/150px-Anvil_JE2_BE2.png?version=3ac9f594c4c981fb9a68ea1a09bde1cc") },
+  { 'key': 'compass_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/4/45/Compass_JE1_BE1.gif/150px-Compass_JE1_BE1.gif?version=79d901f087b8e9a5bd70bc25d79ea8e1") },
+  
 ];
 function replaceTags() {
   const regex = /{{ *([\w\d]+) *, *(\d+) *}}/gm;
@@ -27,32 +75,6 @@ function replaceTags() {
   }
 }
 
-/*function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  // Loop through a collection of all HTML elements: 
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    // search for elements with a certain atrribute:
-    file = elmnt.getAttribute("include-html");
-    if (file) {
-      // Make an HTTP request using the attribute value as the file name:
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4) {
-          if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-          if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-          // Remove the attribute, and call this function once more:
-          elmnt.removeAttribute("include-html");
-          includeHTML();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      return;
-    }
-  }
-}*/
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   // Loop through a collection of all HTML elements: 
