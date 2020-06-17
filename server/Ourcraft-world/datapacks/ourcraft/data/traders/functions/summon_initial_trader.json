@@ -1,0 +1,16 @@
+summon villager ~ ~1 ~ {
+    VillagerData:{
+        profession:librarian,
+        level:2,
+        type:taiga
+    },Invulnerable:1,
+    PersistenceRequired:1,
+    CustomName:"\"Vendedor\"",
+    Offers:{
+        Recipes:[
+            {buy:{id:diamond,Count:3},sell:{id:leather_chestplate,Count:1},rewardExp:0b,maxUses:9999999},
+            {buy:{id:diamond,Count:2},sell:{id:leather_leggings,Count:1},rewardExp:0b,maxUses:9999999},
+            {buy:{id:diamond,Count:1},sell:{id:leather_boots,Count:1},rewardExp:0b,maxUses:9999999}
+        ]
+    }
+}

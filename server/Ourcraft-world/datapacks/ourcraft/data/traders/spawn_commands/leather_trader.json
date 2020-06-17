@@ -1,0 +1,47 @@
+
+# 95 70 -786
+
+summon villager 95 70 -786 {
+    VillagerData:{
+            profession:leatherworker,
+            level:2,
+            type:taiga
+    },
+    Invulnerable:1,
+    PersistenceRequired:1,
+    CustomName:"\"Comerciante\"",
+    Offers:{
+        Recipes:[
+            {
+                buy:{id:gold_ingot,Count:4},
+                sell:{id:leather_chestplate,Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:gold_ingot,Count:3},
+                sell:{id:leather_leggings,Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:gold_ingot,Count:2},
+                sell:{id:leather_boots,Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:gold_ingot,Count:5},
+                sell:{id:wooden_sword,Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:gold_ingot,Count:5},
+                sell:{id:wooden_axe,Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+logs
+server_1.16_pre_release_7.jar
+server_1.16_pre_release_7.jar.bak
+**/advancements
+Ourcraft-world/data
+**/DIM1
+**/DIM-1
+**/playerdata
+**/poi
+**/region
+**/stats
+**/level.dat
+**/level.dat_old
+**/session.lock
