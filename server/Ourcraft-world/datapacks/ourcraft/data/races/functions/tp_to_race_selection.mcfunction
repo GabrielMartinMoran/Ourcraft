@@ -8,11 +8,11 @@
 
 # Teletransporta a todos los jugadores que esten a menos de 128 bloques del spawn y que no
 #   tengan team asignado al area de seleccion de raza
-tp @a[team=,x=112,y=72,z=-821,distance=..128] 10001.9 250 10019 facing 10001.9 250 10018
+tp @a[team=,x=112,y=72,z=-821,distance=..32] 346 250 -1023.9 facing 345 250 -1023.9
 
 
 # Si ya tiene raza lo cura y lleva al spawn
-effect clear @a[team=!,x=10002,y=249,z=10001,distance=..128]
-effect give @a[team=!,x=10002,y=249,z=10001,distance=..128] minecraft:instant_health 1 99 true
-effect give @a[team=!,x=10002,y=249,z=10001,distance=..128] minecraft:regeneration 5 255
-tp @a[team=!,x=10002,y=249,z=10001,distance=..128] 112 73 -821
+effect clear @a[team=!,x=327,y=249,z=-1023,distance=..6]
+effect give @a[team=!,x=327,y=249,z=-1023,distance=..6] minecraft:instant_health 1 99 true
+effect give @a[team=!,x=327,y=249,z=-1023,distance=..6] minecraft:regeneration 5 255
+tp @a[team=!,x=327,y=249,z=-1023,distance=..6] 112 73 -821
