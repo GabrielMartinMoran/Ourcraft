@@ -1,6 +1,7 @@
 {
     "values": [
         "races:apply_effects",
+        "races:tp_to_race_selection",
         "custom_mobs:summon_mobs"
     ]
 }

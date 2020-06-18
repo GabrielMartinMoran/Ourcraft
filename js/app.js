@@ -3,10 +3,13 @@ function getImageTag(url) {
 }
 
 const TAGS = [
+  { 'key': 'water_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/2/25/Water_%28animated%29.png?version=4d81c3a13e2c70d4bcfb0a5a4532ff5b") },
   { 'key': 'heart_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/d/d9/Heart.png?version=1da811ed114de18b9e78c0c036051244") },
+  { 'key': 'fire_resistance_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/9/95/Fire_Resistance.png?version=7ab4ee881c8d3d61856424eedbc5c3ab") },
   { 'key': 'strength_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/8/8b/Strength.png?version=dc72afc37e7e89eb58bdf20ab08ff10e") },
   { 'key': 'nightvision_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/9/91/Night_Vision.png?version=ab01d5e091f4a96fd3cf093e35960dba") },
   { 'key': 'slowness_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/7/7e/Slowness.png?version=14275b91ffc19cf9a7c72171ea2e572d") },
+  { 'key': 'weakness_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/f/f9/Weakness.png?version=37dd027a732a19c2831e4d5edd861ea3") },
   { 'key': 'dolphinsgrace_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/8/82/Dolphin%27s_Grace.png?version=a54b4d95d5dd62d01a90a0f3f8d5e617") },
   { 'key': 'conduitpower_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/e/ef/Conduit_Power.png?version=5928bbfb94d4cd7ee7926a1d7e2ce70d") },
   { 'key': 'miningfatigue_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/c/ca/Mining_Fatigue.png?version=a9f717dcc65dd1222a9ae918e2effc99") },
@@ -65,8 +68,8 @@ const TAGS = [
   { 'key': 'boat_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/2/26/Acacia_Boat_%28Item%29.png/120px-Acacia_Boat_%28Item%29.png?version=66b7919a546a0c23221de669d12e83a7") },
   { 'key': 'anvil_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/3/38/Anvil_JE2_BE2.png/150px-Anvil_JE2_BE2.png?version=3ac9f594c4c981fb9a68ea1a09bde1cc") },
   { 'key': 'compass_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/4/45/Compass_JE1_BE1.gif/150px-Compass_JE1_BE1.gif?version=79d901f087b8e9a5bd70bc25d79ea8e1") },
-  { 'key': 'enchantment_table_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/9/93/Grid_Mesa_de_encantamientos.png?version=f35a383ef10f5eed2979675aaa49f167") },  
-  { 'key': 'leather_horse_armor_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/f/f7/Brown_Leather_Horse_Armor.png?version=42c07fd479d58727e224c7313daee0f9") },  
+  { 'key': 'enchantment_table_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/9/93/Grid_Mesa_de_encantamientos.png?version=f35a383ef10f5eed2979675aaa49f167") },
+  { 'key': 'leather_horse_armor_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/f/f7/Brown_Leather_Horse_Armor.png?version=42c07fd479d58727e224c7313daee0f9") },
 ];
 function replaceTags() {
   const regex = /{{ *([\w\d]+) *, *(\d+) *}}/gm;

@@ -1,7 +1,7 @@
 {
     "values": [
+        "races:configure",
         "global:set_gamerules",
-        "races:create_races",
         "custom_mobs:configure"   
     ]
 }
