@@ -26,6 +26,12 @@ summon villager 95 70 -786 {
             },
             {
                 buy:{id:gold_ingot,Count:3},
+                sell:{id:leather_helmet,Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:gold_ingot,Count:2},
                 sell:{id:leather_boots,Count:1},
                 rewardExp:0b,
                 maxUses:9999999
