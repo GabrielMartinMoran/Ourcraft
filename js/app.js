@@ -82,6 +82,9 @@ const TAGS = [
   { 'key': 'furnace_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/0/0c/Horno.png?version=2c39afbeed87947d8f5db23abe9e8305") },
   { 'key': 'blast_furnace_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/a/a8/Blast_Furnace_JE1_BE1.png/150px-Blast_Furnace_JE1_BE1.png?version=1259f036ecf83bb6dd56a0a7c1ce5dfd") },
   { 'key': 'smoker_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/6/66/Smoker_JE1_BE1.png/150px-Smoker_JE1_BE1.png?version=184f596ff97221361f29e6c4fd4bcccc") },
+  { 'key': 'dispenser_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/a/a2/Dispenser_JE3_BE2.png/150px-Dispenser_JE3_BE2.png?version=e286ec4161ffa1e4764d504187c16935") },
+  { 'key': 'dropper_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/1/16/Dropper_JE2_BE2.png/150px-Dropper_JE2_BE2.png?version=21542a702f0743d92796a4333cf3b57b") },
+  { 'key': 'stick_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/7/7a/Stick_JE1_BE1.png/150px-Stick_JE1_BE1.png?version=0bc06bbfffe51d4626be7ed6ec9f3b4b") },
 ];
 function replaceTags() {
   const regex = /{{ *([\w\d]+) *, *(\d+) *}}/gm;
