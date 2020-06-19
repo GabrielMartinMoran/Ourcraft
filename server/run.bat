@@ -1,1 +1,1 @@
-java -Xms1024M -Xmx4096M -jar server_1.16_rc1.jar
+java -Xms1024M -Xmx2048M -jar server_1.16_rc1.jar
