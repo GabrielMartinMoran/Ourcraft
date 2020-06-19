@@ -70,6 +70,18 @@ const TAGS = [
   { 'key': 'compass_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/4/45/Compass_JE1_BE1.gif/150px-Compass_JE1_BE1.gif?version=79d901f087b8e9a5bd70bc25d79ea8e1") },
   { 'key': 'enchantment_table_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/9/93/Grid_Mesa_de_encantamientos.png?version=f35a383ef10f5eed2979675aaa49f167") },
   { 'key': 'leather_horse_armor_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/f/f7/Brown_Leather_Horse_Armor.png?version=42c07fd479d58727e224c7313daee0f9") },
+  { 'key': 'brewing_stand_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/0/03/Soporte_para_pociones.png?version=5164ea0f700c928d6494e1d75df1b258") },
+  { 'key': 'hopper_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/8/81/Hopper.png?version=ed53a40d4173cdf617591f7be716a7f4") },
+  { 'key': 'torch_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/thumb/b/b2/Torch.png/150px-Torch.png?version=57ae271813a967e9035f30bdf80fe79c") },
+  { 'key': 'minecart_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/9/96/Vagoneta.png?version=2a35da434bccd65b1f64abf6af657ffe") },
+  { 'key': 'TNT_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/5/51/TNT_JE2_BE2.png/150px-TNT_JE2_BE2.png?version=6b19c3b8d4668ce617f1c4a8f2d98731") },
+  { 'key': 'observer_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/3/39/Observer_JE4_BE3.png/150px-Observer_JE4_BE3.png?version=11c145c12ba1187514046c3b9dd48702") },
+  { 'key': 'piston_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/0/08/Grid_Pist%C3%B3n.png?version=150a57103de1744d7c57fba74b701519") },
+  { 'key': 'daylight_sensor_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/6/68/Grid_Sensor_de_luz_solar.png?version=537735a47ae1ad70c7910ea9097244ec") },
+  { 'key': 'rail_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/1/1d/Rails.png?version=e813125fa76b79bbb1c9350fbc0860bd") },
+  { 'key': 'furnace_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_es_gamepedia/0/0c/Horno.png?version=2c39afbeed87947d8f5db23abe9e8305") },
+  { 'key': 'blast_furnace_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/a/a8/Blast_Furnace_JE1_BE1.png/150px-Blast_Furnace_JE1_BE1.png?version=1259f036ecf83bb6dd56a0a7c1ce5dfd") },
+  { 'key': 'smoker_img', 'value': getImageTag("https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/6/66/Smoker_JE1_BE1.png/150px-Smoker_JE1_BE1.png?version=184f596ff97221361f29e6c4fd4bcccc") },
 ];
 function replaceTags() {
   const regex = /{{ *([\w\d]+) *, *(\d+) *}}/gm;
