@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jre1.8.0_251\bin\java.exe" -Xmx8G -Xms4G -jar server_1.16_rc1.jar
