@@ -1,0 +1,2 @@
+execute as @a at @s if data block ~ ~1 ~ {Text1:'{"text":"Health:"}'} run data merge block ~ ~1 ~ {Text2:'["",{"score":{"name":"@p[distance=..10]","objective":"PlayerHealth"}},{"text":" \\u2764","color":"dark_red"}]'}
+execute as @a at @s if data block ~ ~ ~ {Text1:'{"text":"Health:"}'} run data merge block ~ ~ ~ {Text2:'["",{"score":{"name":"@p[distance=..10]","objective":"PlayerHealth"}},{"text":" \\u2764","color":"dark_red"}]'}
