@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:villager] run execute unless entity @s[nbt={Age:0}] run tp @s ~ -512 ~

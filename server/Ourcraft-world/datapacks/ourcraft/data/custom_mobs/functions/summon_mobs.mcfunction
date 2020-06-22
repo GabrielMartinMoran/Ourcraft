@@ -1,6 +1,10 @@
 # HELPERS
 # https://minecraft.tools/en/spawn.php
 
+# REINICIO DE SCOREBOARDS
+scoreboard players set @a[scores={health=1..}] marauderSpawned 0
+# ----------
+
 # CONTADORES
 execute at @a run execute as @e[type=minecraft:zombie,name=Zombie,tag=!found,distance=24..64] run scoreboard players add @a zombiesSpwnCount 1
 execute at @a run execute as @e[type=minecraft:skeleton,name=Skeleton,tag=!found,distance=24..64] run scoreboard players add @a skletonSpwnCount 1
@@ -40,7 +44,17 @@ execute at @e[type=minecraft:skeleton,name=Skeleton,tag=toTransform] run functio
 execute at @e[type=minecraft:phantom,name=Phantom,tag=toTransform] run function custom_mobs:summon_phantom_rider
 execute at @e[type=minecraft:spider,name=Spider,tag=toTransform] run function custom_mobs:summon_tracker
 execute at @e[type=minecraft:dolphin,name=Dolphin,tag=toTransform] run function custom_mobs:summon_dead_surfer
+
+# Merodeador
+execute at @a[scores={health=0,marauderSpawned=0}] run function custom_mobs:summon_marauder
+execute as @a[scores={health=0,marauderSpawned=0}] run scoreboard players set @s marauderSpawned 1
+
+
+
+
 # ----------
+
+
 
 # DESPAWNS
 tp @e[type=minecraft:zombie,name=Zombie,tag=toTransform] ~ -512 ~

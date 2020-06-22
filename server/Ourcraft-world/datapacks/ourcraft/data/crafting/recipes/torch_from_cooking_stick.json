@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+      "item": "minecraft:stick"
+    },
+    "result": "minecraft:torch",
+    "experience": 0.20,
+    "cookingtime": 100
+  }

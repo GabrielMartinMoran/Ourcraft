@@ -2,6 +2,8 @@
     "values": [
         "races:apply_effects",
         "races:tp_to_race_selection",
-        "custom_mobs:summon_mobs"
+        "custom_mobs:summon_mobs",
+        "global:kill_baby_villagers",
+        "global:show_scores"
     ]
 }

@@ -1,0 +1,16 @@
+Version 1.1
+
+Servidor abierto al publico
+
+-----------------------
+
+Version 1.1
+
+- Arreglado bug que hacia que los goron no tomen daño en las columnas de agua con burbujas
+- Los bebes alteanos moriran al aparecer
+- Agregado crafteo de antorchas calentando palos en el horno
+- Habilitado el mob griefing
+- Trackeo de estadisticas: Horas jugadas, muertes, mobs asesinados
+- Agregado nombre de la raza como prefijo del nombre del jugador
+
+-----------------------
