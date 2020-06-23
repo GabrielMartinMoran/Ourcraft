@@ -1,1 +1,1 @@
-summon minecraft:zombie ~ ~1 ~ {CustomName:"\"Merodeador\"",CustomNameVisible:1,PersistenceRequired:1b,CanPickUpLoot:true,Health:30,Attributes:[{Name:"generic.max_health",Base:30},{Name:"generic.attack_damage",Base:4}],IsBaby:0}
+summon minecraft:stray ~ ~1 ~ {CustomName:"\"Merodeador\"",CustomNameVisible:1,PersistenceRequired:1b,CanPickUpLoot:true,Health:30,Attributes:[{Name:"generic.max_health",Base:30},{Name:"generic.attack_damage",Base:4}],IsBaby:0}

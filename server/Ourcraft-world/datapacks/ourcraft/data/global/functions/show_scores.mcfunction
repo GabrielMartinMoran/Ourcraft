@@ -26,4 +26,4 @@ execute as @a run execute if score @s minutesPlayed matches 60.. run scoreboard 
 
 execute if score Server scoreToShowIndex matches 0 run scoreboard objectives setdisplay sidebar deathCounter
 execute if score Server scoreToShowIndex matches 1 run scoreboard objectives setdisplay sidebar mobsKillsCounter
-execute if score Server scoreToShowIndex matches 22 run scoreboard objectives setdisplay sidebar hoursPlayed
+execute if score Server scoreToShowIndex matches 2 run scoreboard objectives setdisplay sidebar hoursPlayed

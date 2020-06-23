@@ -12,3 +12,8 @@ Ourcraft-world/data
 **/level.dat
 **/level.dat_old
 **/session.lock
+whitelist.json
+usercache.json
+banned-ips.json
+banned-players.json
+ops.json

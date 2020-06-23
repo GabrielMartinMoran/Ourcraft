@@ -2,6 +2,9 @@
     "values": [
         "races:configure",
         "global:configure",
-        "custom_mobs:configure"   
+        "custom_mobs:configure",
+        "potions:configure",
+        "lottery:configure",
+        "maintenance:configure"
     ]
 }

@@ -59,11 +59,11 @@ execute as @a[team=corredores,scores={health=17..}] run effect give @s minecraft
 # Goron
 effect give @a[team=goron] minecraft:fire_resistance 999999 0 true
 # Daño por agua
-execute at @a[team=goron,scores={ridingBoat=0}] run execute if block ~ ~ ~ minecraft:water run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
-execute at @a[team=goron,scores={ridingBoat=0}] run execute if block ~ ~1 ~ minecraft:water run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~ ~ minecraft:water run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~1 ~ minecraft:water run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
 # Cuando el agua tiene burbujas
-execute at @a[team=goron,scores={ridingBoat=0}] run execute if block ~ ~ ~ minecraft:bubble_column run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
-execute at @a[team=goron,scores={ridingBoat=0}] run execute if block ~ ~1 ~ minecraft:bubble_column run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~ ~ minecraft:bubble_column run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~1 ~ minecraft:bubble_column run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
 
 execute as @a[team=goron] run attribute @s minecraft:generic.max_health base set 20
 # --------

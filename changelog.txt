@@ -12,5 +12,6 @@ Version 1.1
 - Habilitado el mob griefing
 - Trackeo de estadisticas: Horas jugadas, muertes, mobs asesinados
 - Agregado nombre de la raza como prefijo del nombre del jugador
+- Ahora, al morir un jugador aparecera un Merodeador en el lugar de la muerte
 
 -----------------------
