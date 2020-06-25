@@ -46,12 +46,10 @@ execute at @e[type=minecraft:spider,name=Spider,tag=toTransform] run function cu
 execute at @e[type=minecraft:dolphin,name=Dolphin,tag=toTransform] run function custom_mobs:summon_dead_surfer
 
 # Merodeador
-execute at @a[scores={health=0,marauderSpawned=0}] run function custom_mobs:summon_marauder
-execute as @a[scores={health=0,marauderSpawned=0}] run scoreboard players set @s marauderSpawned 1
-
-
-
-
+# Si no esta seteado el scoreboard
+execute as @a unless score @s maraudSpawnCount matches 0.. run scoreboard players operation @s maraudSpawnCount = @s deathCounter
+execute as @a at @s run execute if score @s deathCounter > @s maraudSpawnCount run function custom_mobs:summon_marauder
+execute as @a at @s run execute if score @s deathCounter > @s maraudSpawnCount run scoreboard players operation @s maraudSpawnCount = @s deathCounter
 # ----------
 
 

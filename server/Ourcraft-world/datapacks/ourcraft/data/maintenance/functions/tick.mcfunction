@@ -28,7 +28,7 @@ execute if score Server ticksUntilShtdwn matches 100 run tellraw @a [{"text": "[
 execute if score Server ticksUntilShtdwn matches 0 run tellraw @a [{"text": "[Server]: ", "color": "gold", "bold": true}, {"text":"Deteniendo el servidor...","color":"green"}]
 
 #Frenar el serve
-execute as MrKupo if score Server ticksUntilShtdwn matches 0 run stop
+execute if score Server ticksUntilShtdwn matches 0 run stop
 
 # Descontamos al contador
 execute if score Server ticksUntilShtdwn matches 0.. run scoreboard players remove Server ticksUntilShtdwn 1

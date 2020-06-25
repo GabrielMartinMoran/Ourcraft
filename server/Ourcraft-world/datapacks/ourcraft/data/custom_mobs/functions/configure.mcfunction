@@ -6,4 +6,4 @@ scoreboard objectives add phantomSpwnCount dummy
 scoreboard objectives add spidersSpwnCount dummy
 scoreboard objectives add dolphinSpwnCount dummy
 
-scoreboard objectives add marauderSpawned dummy
+scoreboard objectives add maraudSpawnCount dummy

@@ -1,6 +1,8 @@
 # POCION DE RESISTENCIA AL AGUA
 #/give @p minecraft:potion{CustomPotionColor:35062,display:{Name:"\"Potion of Water Resistance\"",Lore:["Water Resistance (3:00)"]}}
 
+# Seteamos en 0 para quienes lo tengan en null
+execute as @a unless score @s waterResistTimer matches 0.. run scoreboard players set @s waterResistTimer 0
 
 # Quitamos 1 cada tick
 execute as @a[scores={waterResistTimer=1..}] run scoreboard players remove @s waterResistTimer 1
