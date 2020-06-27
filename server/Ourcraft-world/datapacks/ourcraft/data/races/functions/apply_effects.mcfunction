@@ -24,8 +24,26 @@ execute as @a[team=videntes,scores={health=17..}] run effect give @s minecraft:i
 # Zora
 effect give @a[team=zora] minecraft:conduit_power 999999 0 true
 effect give @a[team=zora] minecraft:dolphins_grace 999999 0 true
+
+# Lentitud
+scoreboard players set @a[team=zora] applyZoraSlow 1
+execute as @a[team=zora] at @s run execute if block ~ ~ ~ minecraft:water run scoreboard players set @s applyZoraSlow 0
+execute as @a[team=zora] at @s run execute if block ~ ~ ~ minecraft:kelp run scoreboard players set @s applyZoraSlow 0
+execute as @a[team=zora] at @s run execute if block ~ ~ ~ minecraft:seagrass run scoreboard players set @s applyZoraSlow 0
+execute as @a[team=zora] at @s run execute if block ~ ~ ~ minecraft:tall_seagrass run scoreboard players set @s applyZoraSlow 0
+
+execute as @a[team=zora,scores={applyZoraSlow=1}] run effect give @s minecraft:slowness 1 0 true
+
+# Velocidad 
 execute at @a[team=zora,scores={ridingBoat=0}] run execute if block ~ ~ ~ minecraft:water run effect give @p[team=zora,scores={ridingBoat=0}] minecraft:speed 1 1 true
-execute at @a[team=zora] run execute unless block ~ ~ ~ minecraft:water run effect give @p[team=zora] minecraft:slowness 2 0 true
+execute at @a[team=zora,scores={ridingBoat=0}] run execute if block ~ ~ ~ minecraft:kelp run effect give @p[team=zora,scores={ridingBoat=0}] minecraft:speed 1 1 true
+execute at @a[team=zora,scores={ridingBoat=0}] run execute if block ~ ~1 ~ minecraft:kelp run effect give @p[team=zora,scores={ridingBoat=0}] minecraft:speed 1 1 true
+execute at @a[team=zora,scores={ridingBoat=0}] run execute if block ~ ~ ~ minecraft:seagrass run effect give @p[team=zora,scores={ridingBoat=0}] minecraft:speed 1 1 true
+execute at @a[team=zora,scores={ridingBoat=0}] run execute if block ~ ~1 ~ minecraft:seagrass run effect give @p[team=zora,scores={ridingBoat=0}] minecraft:speed 1 1 true
+execute at @a[team=zora,scores={ridingBoat=0}] run execute if block ~ ~ ~ minecraft:tall_seagrass run effect give @p[team=zora,scores={ridingBoat=0}] minecraft:speed 1 1 true
+execute at @a[team=zora,scores={ridingBoat=0}] run execute if block ~ ~1 ~ minecraft:tall_seagrass run effect give @p[team=zora,scores={ridingBoat=0}] minecraft:speed 1 1 true
+
+
 execute as @a[team=zora] run attribute @s minecraft:generic.max_health base set 16
 # Para que recalcule la salud (si tiene mas que el maximo)
 execute as @a[team=zora,scores={health=17..}] run effect give @s minecraft:instant_health 1 0 true
@@ -64,6 +82,14 @@ execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute
 # Cuando el agua tiene burbujas
 execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~ ~ minecraft:bubble_column run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
 execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~1 ~ minecraft:bubble_column run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+# Cuando esta en kelp
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~ ~ minecraft:kelp run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~1 ~ minecraft:kelp run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+# Cuando esta en seagrass
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~ ~ minecraft:seagrass run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~1 ~ minecraft:seagrass run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~ ~ minecraft:tall_seagrass run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
+execute at @a[team=goron,scores={ridingBoat=0,waterResistTimer=..0}] run execute if block ~ ~1 ~ minecraft:tall_seagrass run effect give @p[team=goron,scores={ridingBoat=0}] minecraft:wither 2 0
 
 execute as @a[team=goron] run attribute @s minecraft:generic.max_health base set 20
 # --------

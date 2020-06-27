@@ -4,6 +4,9 @@ scoreboard objectives add ridingBoat dummy
 scoreboard objectives add needsFullHeal dummy
 
 
+scoreboard objectives add applyZoraSlow dummy
+
+
 team modify test_team prefix {"text":"[Debugger] ","color":"yellow","bold":true}
 team modify videntes prefix {"text":"[Vidente] ","color":"dark_blue","bold":true}
 team modify zora prefix {"text":"[Zora] ","color":"blue","bold":true}

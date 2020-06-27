@@ -20,3 +20,8 @@ scoreboard objectives add ticksPlayed dummy
 scoreboard objectives add secondsPlayed dummy
 scoreboard objectives add minutesPlayed dummy
 scoreboard objectives add hoursPlayed dummy "§6  Horas jugadas  "
+
+
+scoreboard objectives add sleeping minecraft.custom:minecraft.sleep_in_bed
+scoreboard objectives add awake minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add daytime dummy

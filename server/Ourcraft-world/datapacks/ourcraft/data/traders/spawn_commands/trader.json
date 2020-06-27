@@ -1,7 +1,7 @@
 summon villager 95 70 -786 {
     VillagerData:{
             profession:leatherworker,
-            level:2,
+            level:5,
             type:taiga
     },
     Invulnerable:1,

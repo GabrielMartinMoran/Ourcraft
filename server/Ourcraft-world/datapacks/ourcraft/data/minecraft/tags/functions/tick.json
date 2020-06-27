@@ -5,6 +5,7 @@
         "custom_mobs:summon_mobs",
         "global:show_scores",
         "global:kill_villagers",
+        "global:detect_sleep",
         "potions:drink_detector",
         "lottery:lottery_tick",
         "maintenance:tick"
