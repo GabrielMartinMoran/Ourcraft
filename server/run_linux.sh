@@ -1,0 +1,1 @@
+java -Xms4096M -Xmx4096M -jar server_1.16.1.jar nogui

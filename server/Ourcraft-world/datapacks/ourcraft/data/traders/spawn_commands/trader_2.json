@@ -1,4 +1,4 @@
-summon villager 95 70 -786 {
+summon villager ~ ~ ~ {
     VillagerData:{
             profession:cartographer,
             level:5,
@@ -60,6 +60,24 @@ summon villager 95 70 -786 {
             {
                 buy:{id:gold_ingot,Count:20},
                 sell:{id:minecart,Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:gold_ingot,Count:40},
+                sell:{id:shield,Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:gold_ingot,Count:64},
+                sell:{id:damaged_anvil,Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:lapis_lazuli,Count:64},
+                sell:{id:gold_ingot,Count:1},
                 rewardExp:0b,
                 maxUses:9999999
             }
