@@ -76,6 +76,14 @@ summon villager ~ ~ ~ {
                 maxUses:9999999
             },
             {
+                buy:{id:gold_ingot,Count:20},
+                sell:{id:potion,Count:1,
+                    tag:{CustomPotionColor:8716534,display:{Name:"\"Pocion de regreso a casa\"",Lore:["\"Te teletransporta al spawn point del servidor\""]},CustomPotionType:"\"return_to_home_potion\""}
+                    },
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
                 buy:{id:lapis_lazuli,Count:64},
                 sell:{id:gold_ingot,Count:1},
                 rewardExp:0b,

@@ -26,3 +26,16 @@ execute as @a[scores={waterResistTimer=1..}] run scoreboard players set @s ch_to
 title @a[scores={waterResistTimer=1..}] actionbar [{"text":"Water Resistance: ","color":"dark_aqua"},{"score":{"name":"MrKupo","objective":"waterResistTimer"},"color":"dark_aqua"}]
 #title @a[scores={waterResistTimer=1..}] subtitle ["",{"text":"Water Resistance:","color":"blue"},{"score":{"name":"MrKupo","objective":"waterResistTimer"},"color":"blue"}]
 #title @a[scores={waterResistTimer=1..}] title ""
+
+# POCION DE REGRESO A CASA
+# SPAWN = 112 72 -821
+#/give @p minecraft:potion{CustomPotionColor:8716534,display:{Name:"\"Pocion de regreso a casa\"",Lore:["\"Te teletransporta al spawn point del servidor\""]},CustomPotionType:"\"return_to_home_potion\""}
+execute in minecraft:overworld as @a[nbt={SelectedItem:{id:"minecraft:potion",tag:{display:{Name:'"Pocion de regreso a casa"'},CustomPotionType:"\"return_to_home_potion\""}}}] run tag @s add holdsReturnToHomePotion
+execute in minecraft:overworld as @a[nbt=!{SelectedItem:{id:"minecraft:potion",tag:{display:{Name:'"Pocion de regreso a casa"'},CustomPotionType:"\"return_to_home_potion\""}}},scores={drinkPotion=0}] run tag @s remove holdsReturnToHomePotion
+# Si esta en el overworld
+execute in minecraft:overworld as @a[nbt={Dimension:"minecraft:overworld"},tag=holdsReturnToHomePotion,scores={drinkPotion=1..}] run tp @s 112 72 -821
+execute in minecraft:overworld as @a[nbt={Dimension:"minecraft:overworld"},tag=holdsReturnToHomePotion,scores={drinkPotion=1..}] at @s run playsound minecraft:item.chorus_fruit.teleport master @s
+execute in minecraft:overworld as @a[nbt={Dimension:"minecraft:overworld"},tag=holdsReturnToHomePotion,scores={drinkPotion=1..}] at @s run particle minecraft:dragon_breath ~ ~ ~ 2 2 2 1 1000
+# Si no esta en el overworld
+execute in minecraft:overworld as @a[nbt=!{Dimension:"minecraft:overworld"},tag=holdsReturnToHomePotion,scores={drinkPotion=1..}] run tellraw @s [{"text":"Ups.. Parece que esta pocion solo funciona en el Overworld","color":"green"}]
+execute in minecraft:overworld as @a[tag=holdsReturnToHomePotion,scores={drinkPotion=1..}] run scoreboard players set @s drinkPotion 0
