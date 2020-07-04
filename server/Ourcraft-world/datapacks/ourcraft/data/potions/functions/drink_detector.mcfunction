@@ -23,9 +23,7 @@ execute as @a[scores={waterResistTimer=..0}] run scoreboard players set @s ch_to
 execute as @a[scores={waterResistTimer=1..}] run scoreboard players set @s ch_toggleConst -1
 
 # Mostramos el efecto de la pocion
-title @a[scores={waterResistTimer=1..}] actionbar [{"text":"Water Resistance: ","color":"dark_aqua"},{"score":{"name":"MrKupo","objective":"waterResistTimer"},"color":"dark_aqua"}]
-#title @a[scores={waterResistTimer=1..}] subtitle ["",{"text":"Water Resistance:","color":"blue"},{"score":{"name":"MrKupo","objective":"waterResistTimer"},"color":"blue"}]
-#title @a[scores={waterResistTimer=1..}] title ""
+execute as @a[scores={waterResistTimer=1..}] run title @s actionbar [{"text":"Water Resistance: ","color":"dark_aqua"},{"score":{"name":"@s","objective":"waterResistTimer"},"color":"dark_aqua"}]
 
 # POCION DE REGRESO A CASA
 # SPAWN = 112 72 -821

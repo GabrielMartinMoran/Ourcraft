@@ -5,6 +5,7 @@
         "custom_mobs:configure",
         "potions:configure",
         "lottery:configure",
-        "maintenance:configure"
+        "maintenance:configure",
+        "first_nether_portal:configure"
     ]
 }

@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item,distance=..2,limit=1,nbt={Item:{id:"minecraft:diamond"}}] run function lottery:enchantments_roll
+execute as @e[type=minecraft:item,distance=..2,limit=1,nbt={Item:{id:"minecraft:diamond"}}] run kill @s

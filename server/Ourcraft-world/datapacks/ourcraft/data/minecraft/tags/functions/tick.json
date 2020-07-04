@@ -8,6 +8,7 @@
         "global:detect_sleep",
         "potions:drink_detector",
         "lottery:lottery_tick",
-        "maintenance:tick"
+        "maintenance:tick",
+        "first_nether_portal:check_portal_completion"
     ]
 }

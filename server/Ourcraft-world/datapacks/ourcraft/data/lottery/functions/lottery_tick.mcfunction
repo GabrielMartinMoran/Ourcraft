@@ -6,6 +6,11 @@ execute if score Server lotteryRndmTimer >= Server lotteryMaxTicks run scoreboar
 
 function lottery:calculate_random
 
+
+# Detector
+#execute as @e[type=minecraft:item,distance=..2,limit=1,nbt={Item:{id:"minecraft:gold_ingot"}}] run function lottery:lottery_roll
+
+
 # Comentado para desactivarlo
 #execute as @e[type=minecraft:item,x=145,y=72,z=-780,distance=..1,limit=1,nbt={Item:{id:"minecraft:gold_ingot"}}] run function lottery:lottery_roll
 #execute as @e[type=minecraft:item,x=145,y=72,z=-780,distance=..1,limit=1,nbt={Item:{id:"minecraft:gold_ingot"}}] run kill @s

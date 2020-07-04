@@ -1,0 +1,38 @@
+summon villager ~ ~ ~ {
+    VillagerData:{
+            profession:fletcher,
+            level:5,
+            type:savanna
+    },
+    Invulnerable:1,
+    PersistenceRequired:1,
+    CustomName:"\"Vendedor de tickets\"",
+    Offers:{
+        Recipes:[   
+            {
+                buy:{id:iron_ingot,Count:1},
+                sell:{id:paper,tag:{display:{Name:'{"text":"Ticket hierro","color":"gray","italic":true}',Lore:['{"text":"Usalo en las atracciones de la feria","color":"dark_purple"}']}},Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            }, 
+            {
+                buy:{id:gold_ingot,Count:1},
+                sell:{id:paper,tag:{display:{Name:'{"text":"Ticket oro","color":"gold","italic":true}',Lore:['{"text":"Usalo en las atracciones de la feria","color":"dark_purple"}']}},Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:diamond,Count:1},
+                sell:{id:paper,tag:{display:{Name:'{"text":"Ticket diamante","color":"dark_aqua","italic":true}',Lore:['{"text":"Usalo en las atracciones de la feria","color":"dark_purple"}']}},Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            },
+            {
+                buy:{id:emerald,Count:1},
+                sell:{id:paper,tag:{display:{Name:'{"text":"Ticket esmeralda","color":"green","italic":true}',Lore:['{"text":"Usalo en las atracciones de la feria","color":"dark_purple"}']}},Count:1},
+                rewardExp:0b,
+                maxUses:9999999
+            }
+        ]
+    }
+}
