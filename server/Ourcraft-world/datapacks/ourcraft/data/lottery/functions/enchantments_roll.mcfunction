@@ -1,40 +1,40 @@
 # 38% de que toque libro
-execute if score Server lotteryRndmValue matches 0 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:mending,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 1 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:soul_speed,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 2 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:protection,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 3 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:fire_protection,lvl:1}]} 1      
-execute if score Server lotteryRndmValue matches 4 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:feather_falling,lvl:1}]} 1      
-execute if score Server lotteryRndmValue matches 5 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:blast_protection,lvl:1}]} 1     
-execute if score Server lotteryRndmValue matches 6 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:projectile_protection,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 7 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:respiration,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 8 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:aqua_affinity,lvl:1}]} 1        
-execute if score Server lotteryRndmValue matches 9 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:thorns,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 10 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:depth_strider,lvl:1}]} 1       
-execute if score Server lotteryRndmValue matches 11 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:sharpness,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 12 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:smite,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 13 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:bane_of_arthropods,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 14 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:knockback,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 15 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:fire_aspect,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 16 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:looting,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 17 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:efficiency,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 18 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:silk_touch,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 19 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:unbreaking,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 20 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:fortune,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 21 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:power,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 22 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:punch,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 23 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:flame,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 24 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:infinity,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 25 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:luck_of_the_sea,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 26 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:lure,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 27 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:channeling,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 28 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:binding_curse,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 29 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:vanishing_curse,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 30 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:frost_walker,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 31 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:impaling,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 32 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:loyalty,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 33 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:multishot,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 34 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:piercing,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 35 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:quick_charge,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 36 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:riptide,lvl:1}]} 1
-execute if score Server lotteryRndmValue matches 37 run give @p minecraft:enchanted_book{StoredEnchantments:[{id:sweeping,lvl:1}]} 1
+execute at @p if score Server lotteryRndmValue matches 0 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"mending",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 1 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"soul_speed",lvl:1}]}}}   
+execute at @p if score Server lotteryRndmValue matches 2 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"protection",lvl:1}]}}}   
+execute at @p if score Server lotteryRndmValue matches 3 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"fire_protection",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 4 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"feather_falling",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 5 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"blast_protection",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 6 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"projectile_protection",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 7 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"respiration",lvl:1}]}}}  
+execute at @p if score Server lotteryRndmValue matches 8 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"aqua_affinity",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 9 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"thorns",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 10 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"depth_strider",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 11 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"sharpness",lvl:1}]}}}   
+execute at @p if score Server lotteryRndmValue matches 12 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"smite",lvl:1}]}}}       
+execute at @p if score Server lotteryRndmValue matches 13 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"bane_of_arthropods",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 14 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"knockback",lvl:1}]}}}   
+execute at @p if score Server lotteryRndmValue matches 15 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"fire_aspect",lvl:1}]}}} 
+execute at @p if score Server lotteryRndmValue matches 16 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"looting",lvl:1}]}}}     
+execute at @p if score Server lotteryRndmValue matches 17 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"efficiency",lvl:1}]}}}  
+execute at @p if score Server lotteryRndmValue matches 18 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"silk_touch",lvl:1}]}}}  
+execute at @p if score Server lotteryRndmValue matches 19 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"unbreaking",lvl:1}]}}}  
+execute at @p if score Server lotteryRndmValue matches 20 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"fortune",lvl:1}]}}}     
+execute at @p if score Server lotteryRndmValue matches 21 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"power",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 22 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"punch",lvl:1}]}}}       
+execute at @p if score Server lotteryRndmValue matches 23 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"flame",lvl:1}]}}}       
+execute at @p if score Server lotteryRndmValue matches 24 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"infinity",lvl:1}]}}}    
+execute at @p if score Server lotteryRndmValue matches 25 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"luck_of_the_sea",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 26 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"lure",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 27 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"channeling",lvl:1}]}}}  
+execute at @p if score Server lotteryRndmValue matches 28 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"binding_curse",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 29 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"vanishing_curse",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 30 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"frost_walker",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 31 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"impaling",lvl:1}]}}}    
+execute at @p if score Server lotteryRndmValue matches 32 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"loyalty",lvl:1}]}}}     
+execute at @p if score Server lotteryRndmValue matches 33 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"multishot",lvl:1}]}}}   
+execute at @p if score Server lotteryRndmValue matches 34 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"piercing",lvl:1}]}}}    
+execute at @p if score Server lotteryRndmValue matches 35 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"quick_charge",lvl:1}]}}}
+execute at @p if score Server lotteryRndmValue matches 36 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"riptide",lvl:1}]}}}     
+execute at @p if score Server lotteryRndmValue matches 37 run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:enchanted_book",Count:1b,tag:{StoredEnchantments:[{id:"sweeping",lvl:1}]}}}  
 execute if score Server lotteryRndmValue matches 38..99 run give @p minecraft:book 1

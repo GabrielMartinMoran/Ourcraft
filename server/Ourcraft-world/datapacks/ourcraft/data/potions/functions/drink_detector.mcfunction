@@ -29,6 +29,7 @@ execute as @a[scores={waterResistTimer=1..}] run title @s actionbar [{"text":"Wa
 # SPAWN = 112 72 -821
 #/give @p minecraft:potion{CustomPotionColor:8716534,display:{Name:"\"Pocion de regreso a casa\"",Lore:["\"Te teletransporta al spawn point del servidor\""]},CustomPotionType:"\"return_to_home_potion\""}
 execute in minecraft:overworld as @a[nbt={SelectedItem:{id:"minecraft:potion",tag:{display:{Name:'"Pocion de regreso a casa"'},CustomPotionType:"\"return_to_home_potion\""}}}] run tag @s add holdsReturnToHomePotion
+execute in minecraft:overworld as @a[tag=!holdsReturnToHomePotion] run scoreboard players set @s drinkPotion 0
 execute in minecraft:overworld as @a[nbt=!{SelectedItem:{id:"minecraft:potion",tag:{display:{Name:'"Pocion de regreso a casa"'},CustomPotionType:"\"return_to_home_potion\""}}},scores={drinkPotion=0}] run tag @s remove holdsReturnToHomePotion
 # Si esta en el overworld
 execute in minecraft:overworld as @a[nbt={Dimension:"minecraft:overworld"},tag=holdsReturnToHomePotion,scores={drinkPotion=1..}] run tp @s 112 72 -821
@@ -37,3 +38,11 @@ execute in minecraft:overworld as @a[nbt={Dimension:"minecraft:overworld"},tag=h
 # Si no esta en el overworld
 execute in minecraft:overworld as @a[nbt=!{Dimension:"minecraft:overworld"},tag=holdsReturnToHomePotion,scores={drinkPotion=1..}] run tellraw @s [{"text":"Ups.. Parece que esta pocion solo funciona en el Overworld","color":"green"}]
 execute in minecraft:overworld as @a[tag=holdsReturnToHomePotion,scores={drinkPotion=1..}] run scoreboard players set @s drinkPotion 0
+
+
+# Golden carrot eaten
+# Si no esta seteado el scoreboard
+execute as @a unless score @s goldCarrotsRegen matches 0.. run scoreboard players operation @s goldCarrotsRegen = @s goldCarrotsEaten
+execute as @a at @s run execute if score @s goldCarrotsEaten > @s goldCarrotsRegen run effect give @s minecraft:regeneration 3 1
+execute as @a at @s run execute if score @s goldCarrotsEaten > @s goldCarrotsRegen run scoreboard players operation @s goldCarrotsRegen = @s goldCarrotsEaten
+# -------------------

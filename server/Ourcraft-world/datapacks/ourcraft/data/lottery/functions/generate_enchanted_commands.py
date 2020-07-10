@@ -40,4 +40,4 @@ ENCHANTMENTS = [
 ]
 
 for i, x in enumerate(ENCHANTMENTS):
-    print("execute if score Server lotteryRndmValue matches " + str(i) + " run give @p minecraft:enchanted_book{StoredEnchantments:[{id:" + x + ",lvl:1}]} 1")
+    print("execute at @p if score Server lotteryRndmValue matches " + str(i) + " run summon minecraft:item ~ ~ ~ {Item:{id:\"minecraft:enchanted_book\",Count:1b,tag:{StoredEnchantments:[{id:\"" + x + "\",lvl:1}]}}}")

@@ -1,0 +1,220 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 07/07/20 13:57
+Description: Watching Server
+
+java.lang.Error
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireShared(Unknown Source)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lock(Unknown Source)
+	at tt.b(SourceFile:100)
+	at tt.a(SourceFile:117)
+	at aoy.ej(SourceFile:3080)
+	at aoy.el(SourceFile:3092)
+	at aoy.i(SourceFile:1885)
+	at aoy.C(SourceFile:2637)
+	at aoy.dP(SourceFile:2610)
+	at aoy.k(SourceFile:2552)
+	at aoz.k(SourceFile:538)
+	at bcb.k(SourceFile:42)
+	at bcu.k(SourceFile:257)
+	at aoy.j(SourceFile:2251)
+	at aoz.j(SourceFile:338)
+	at bcu.j(SourceFile:230)
+	at zd.a(SourceFile:615)
+	at zd$$Lambda$3526/237442070.accept(Unknown Source)
+	at bqb.a(SourceFile:603)
+	at zd.a(SourceFile:405)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:873)
+	at yd.b(SourceFile:306)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:813)
+	at net.minecraft.server.MinecraftServer.v(SourceFile:672)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:256)
+	at net.minecraft.server.MinecraftServer$$Lambda$3130/250837356.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireShared(Unknown Source)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lock(Unknown Source)
+	at tt.b(SourceFile:100)
+	at tt.a(SourceFile:117)
+	at aoy.ej(SourceFile:3080)
+	at aoy.el(SourceFile:3092)
+	at aoy.i(SourceFile:1885)
+	at aoy.C(SourceFile:2637)
+	at aoy.dP(SourceFile:2610)
+	at aoy.k(SourceFile:2552)
+	at aoz.k(SourceFile:538)
+	at bcb.k(SourceFile:42)
+	at bcu.k(SourceFile:257)
+	at aoy.j(SourceFile:2251)
+	at aoz.j(SourceFile:338)
+	at bcu.j(SourceFile:230)
+	at zd.a(SourceFile:615)
+	at zd$$Lambda$3526/237442070.accept(Unknown Source)
+	at bqb.a(SourceFile:603)
+	at zd.a(SourceFile:405)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:873)
+	at yd.b(SourceFile:306)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:813)
+	at net.minecraft.server.MinecraftServer.v(SourceFile:672)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:256)
+
+-- Thread Dump --
+Details:
+	Threads: "Netty Server IO #1" Id=40 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@505a4e46
+	-  locked java.util.Collections$UnmodifiableSet@5e9daa3d
+	-  locked sun.nio.ch.WindowsSelectorImpl@5aa22536
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+	...
+
+
+"Java2D Disposer" Id=38 WAITING on java.lang.ref.ReferenceQueue$Lock@1fa0a006
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@1fa0a006
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at sun.java2d.Disposer.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Server Watchdog" Id=37 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at yg.run(SourceFile:45)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"RCON Listener #1" Id=36 RUNNABLE (in native)
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	-  locked java.net.SocksSocketImpl@1d8af5ca
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at acg.run(SourceFile:49)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #0" Id=30 RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@2ef57804
+	-  locked java.util.Collections$UnmodifiableSet@65357379
+	-  locked sun.nio.ch.WindowsSelectorImpl@7f8f5f49
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+	...
+
+
+"ObjectCleanerThread" Id=29 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@35e1c1d7
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@35e1c1d7
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at io.netty.util.internal.ObjectCleaner$1.run(ObjectCleaner.java:54)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Server console handler" Id=28 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	-  locked java.io.BufferedInputStream@30d1ba37
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	-  locked java.io.InputStreamReader@7e31b9ef
+	at java.io.InputStreamReader.read(Unknown Source)
+	...
+
+
+"DestroyJavaVM" Id=27 RUNNABLE
+
+
+"Server thread" Id=24 RUNNABLE
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireShared(Unknown Source)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lock(Unknown Source)
+	at tt.b(SourceFile:100)
+	at tt.a(SourceFile:117)
+	at aoy.ej(SourceFile:3080)
+	at aoy.el(SourceFile:3092)
+	at aoy.i(SourceFile:1885)
+	at aoy.C(SourceFile:2637)
+	...
+
+
+"Snooper Timer" Id=25 WAITING on java.util.TaskQueue@7bc1c477
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@7bc1c477
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+
+"Timer hack thread" Id=18 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at v$2.run(SourceFile:524)
+
+
+"Attach Listener" Id=5 RUNNABLE
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@40955da1
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@40955da1
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@7da84786
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@7da84786
+	at java.lang.Object.wait(Unknown Source)
+	at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+	at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+
+
+Stacktrace:
+	at yg.run(SourceFile:61)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.1
+	Minecraft Version ID: 1.16.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1148453640 bytes (1095 MB) / 2119696384 bytes (2021 MB) up to 2119696384 bytes (2021 MB)
+	CPUs: 6
+	JVM Flags: 2 total; -Xms1024M -Xmx2048M
+	Player Count: 0 / 20; []
+	Data Packs: vanilla, file/custom villager shops v1.1.0.zip (incompatible), file/durability ping v1.1.0.zip (incompatible), file/larger phantoms v1.0.0.zip (incompatible), file/multiplayer sleep v1.0.1.zip (incompatible), file/nether portal coords v1.0.0.zip (incompatible), file/villager workstation highlights v1.0.0.zip (incompatible), file/coordinates hud v1.1.1.zip (incompatible), file/Player Health Display, file/ourcraft, file/Player Health Display v3.zip
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)
