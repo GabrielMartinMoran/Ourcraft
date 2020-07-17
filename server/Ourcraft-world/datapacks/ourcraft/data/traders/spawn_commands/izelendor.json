@@ -1,0 +1,13 @@
+summon villager ~ ~-0.5 ~ {Rotation:[270f,0f], VillagerData: {profession:cleric,level: 5,type:jungle
+    },Invulnerable: 1,PersistenceRequired: 1, NoAI: 1,CustomName: "\"Izelendor\"",Offers: {Recipes: [
+        {
+            buy:{id:gold_ingot,Count:10},
+            sell:{id:potion,Count:1,
+                tag:{Potion:"minecraft:water",CustomPotionEffects:[{Id:26,Duration:6000}],display:{Name:"\"Pocion de Suerte\""}}
+            },
+            rewardExp:0b,
+            maxUses:9999999
+        }
+    ]
+    }
+}
