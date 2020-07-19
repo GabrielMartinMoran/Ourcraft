@@ -1,0 +1,1 @@
+summon phantom ~ ~5 ~ {CustomNameVisible:0b,Health:50f,Size:64,CustomName:'{"text":"King phantom"}',Attributes:[{Name:generic.max_health,Base:50},{Name:generic.follow_range,Base:128},{Name:generic.movement_speed,Base:50}]}

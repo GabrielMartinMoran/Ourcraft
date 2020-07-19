@@ -1,0 +1,1 @@
+summon phantom ~ ~2 ~ {CustomNameVisible:0b,Health:30f,Size:5,Passengers:[{id:"minecraft:end_crystal",CustomNameVisible:0b,ShowBottom:0b,CustomName:'{"text":"Phankaboom"}'}],CustomName:'{"text":"Phankaboom"}',Attributes:[{Name:generic.max_health,Base:30},{Name:generic.follow_range,Base:128}]}

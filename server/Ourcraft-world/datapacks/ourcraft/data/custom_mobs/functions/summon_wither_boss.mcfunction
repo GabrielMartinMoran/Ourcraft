@@ -1,0 +1,1 @@
+summon wither ~ ~ ~ {CustomNameVisible:0b,Health:800f,CustomName:'{"text":"Wither boss"}',Attributes:[{Name:generic.max_health,Base:800},{Name:generic.follow_range,Base:256},{Name:generic.movement_speed,Base:50}]}

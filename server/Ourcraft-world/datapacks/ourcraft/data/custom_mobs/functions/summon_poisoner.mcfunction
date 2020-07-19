@@ -1,0 +1,1 @@
+summon cave_spider ~ ~ ~ {CustomNameVisible:0b,Health:25f,CustomName:'{"text":"Poisoner"}',Attributes:[{Name:generic.max_health,Base:25},{Name:generic.follow_range,Base:64},{Name:generic.movement_speed,Base:0.4},{Name:generic.attack_damage,Base:15}]}

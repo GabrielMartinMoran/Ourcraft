@@ -1,0 +1,1 @@
+summon creeper ~ ~ ~ {CustomNameVisible:0b,CustomName:'{"text":"Screepy"}',Attributes:[{Name:"generic.follow_range",Base:32},{Name:"generic.movement_speed",Base:0.5f}]}

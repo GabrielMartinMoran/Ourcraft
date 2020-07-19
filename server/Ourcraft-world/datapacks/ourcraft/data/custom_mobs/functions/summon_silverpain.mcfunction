@@ -1,0 +1,1 @@
+summon silverfish ~ ~ ~ {CustomNameVisible:0b,Health:20f,CustomName:'{"text":"Silverpain"}',HandItems:[{id:"minecraft:cactus",Count:1b},{}],Attributes:[{Name:generic.max_health,Base:20},{Name:generic.follow_range,Base:32},{Name:generic.movement_speed,Base:0.4},{Name:generic.attack_damage,Base:15}]}

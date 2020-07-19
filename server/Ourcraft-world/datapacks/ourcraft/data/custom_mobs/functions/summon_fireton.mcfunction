@@ -1,0 +1,1 @@
+summon phantom ~ ~ ~ {CustomNameVisible:0b,Health:30f,Size:5,Passengers:[{id:"minecraft:blaze",CustomNameVisible:0b,Health:40f,CustomName:'{"text":"Fireton"}',Attributes:[{Name:generic.max_health,Base:40},{Name:generic.follow_range,Base:128}]}],CustomName:'{"text":"Fireton"}',Attributes:[{Name:generic.max_health,Base:30},{Name:generic.follow_range,Base:128}]}

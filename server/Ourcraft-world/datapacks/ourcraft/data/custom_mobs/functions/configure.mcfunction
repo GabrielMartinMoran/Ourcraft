@@ -7,3 +7,6 @@ scoreboard objectives add spidersSpwnCount dummy
 scoreboard objectives add dolphinSpwnCount dummy
 
 scoreboard objectives add maraudSpawnCount dummy
+
+scoreboard objectives add spwnTickRandCntr dummy
+scoreboard objectives add spwnTickRndValue dummy
