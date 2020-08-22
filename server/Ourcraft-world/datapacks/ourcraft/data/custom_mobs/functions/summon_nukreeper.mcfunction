@@ -1,0 +1,1 @@
+summon creeper ~ ~ ~ {CustomNameVisible:0b,Health:40f,powered:1b,ExplosionRadius:12b,CustomName:'{"text":"Nukreeper"}',Attributes:[{Name:generic.max_health,Base:40},{Name:generic.movement_speed,Base:0.2}]}

@@ -6,9 +6,9 @@
         "global:show_scores",
         "global:kill_villagers",
         "global:detect_sleep",
+        "global:prevent_sleeping",
         "potions:drink_detector",
         "lottery:lottery_tick",
-        "maintenance:tick",
-        "first_nether_portal:check_portal_completion"
+        "maintenance:tick"        
     ]
 }

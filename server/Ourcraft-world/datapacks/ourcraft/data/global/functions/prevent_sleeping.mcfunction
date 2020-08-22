@@ -1,0 +1,1 @@
+execute as @a at @s if data entity @s SleepingX run tp @s ~ ~ ~
